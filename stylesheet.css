@@ -1,8 +1,10 @@
 :root {
     --main-white: #ffffff;
-    --main-red: #c22e42;
+    --main-red: #a12334;
+    --main-gold: #e4c725;
     --main-blue: #411e63b9;
     --main-gray: #313a44;
+
 }
 *{
     margin: 0;
@@ -29,74 +31,95 @@ body {
     width: 100%;
     background-color:   var(--main-red);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    z-index: 10;
     height: 50px;
-    padding-right: 10px;
+    z-index: 999;
 }
 .nav > ul {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-inline-start: 0;
-  margin-block: 0;
-  height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+  
 }
 .nav > ul > li{
-  color: #fbfeff;
-  margin: 0 0.2rem;
-  padding: 0.2rem;
-  display: block;
-  font-size:    1.5rem;
-    
+    color: var(--main-white);
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+    font-size:    1.5rem; 
+    padding: 0 0.5rem;
 }
+nav > ul > li:hover {
+    background-color: var(--main-white);
+    color: var(--main-red);
+    cursor: pointer;
+}
+.nav > ul > li > a{
+    color: inherit;
+    text-decoration: none;
+}
+
 main {
   padding-top: 50px;
 }
 
 section{
-    border-bottom: var(--main-red)  4px solid;
+    border-bottom: var(--main-gold)  4px solid;
 }
 
 .welcome-section{
     background-color:   var(--main-gray);
-    height: 100vh;
-    padding-bottom: 25vh;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    width: 100%;
 
 }
 .background-img{
-    background-image: url("./img's/DonatasKaretav3.jpg");
+    background-image: url("./img's/DonatasKaretaFlipped.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    display: inline-block;
 }
-.welcome-section h1,p{
+
+.welcome-text{
+    display: inline-block;
+    padding-top:25vh;
+    padding-left: 2rem;
+    padding-right: 2rem;  
+}
+
+.welcome-text h1,p{
     color:  var(--main-white);
-    text-align: center;
 }
-.welcome-section h1{
-    padding-top: 45vh;
-    font-size:  4rem;
+.welcome-text h1{
+    font-size:  6rem;
     
 }
-.welcome-section p{
+.welcome-text p{
     color:  var(--main-red);
-    padding-bottom: 2.5vh;
+    padding-bottom: 5vh;
+    font-size:  2rem;
     
 }
 .about-me{
-    color:  white;
+    padding-left: 0.5rem;
+    margin-bottom: 2rem;
+    color:  var(--main-white);
     border: var(--main-red) solid  3px;
-    margin: 0   30%;   
 }
 .about-me h2{
     padding-top: 5px;
-    text-align: center;
+    font-size: 2rem;
     text-decoration: underline;
 }
 
 .about-me   p{
-    padding: 5px 10px 15px 10px;
     color:  white;
+    font-size: 1rem;
 }
 
 
@@ -108,7 +131,7 @@ section{
 
 .project-section {
     padding-bottom:  10px;
-    background-color:  var(--main-blue);
+    background-color:  var(--main-red);
     width:  100%;
     text-align: center;
 }
@@ -173,7 +196,7 @@ section{
     display: block;
 }
 .card:hover .project-img {
-    opacity: 0;
+    opacity: 0.1;
 }
 
 .project-title{
@@ -235,6 +258,6 @@ i{
 footer{
     color: var(--main-white);
     text-align: center;
-    padding: 5 0;
-    background-color: var(--main-blue);
+    padding: 5px 0;
+    background-color: var(--main-gray);
 }
