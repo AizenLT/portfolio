@@ -60,8 +60,14 @@ section{
 
 .welcome-section{
     background-color:   var(--main-gray);
+    height: 100vh;
     padding-bottom: 25vh;
 
+}
+.background-img{
+    background-image: url("./img's/DonatasKaretav3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .welcome-section h1,p{
     color:  var(--main-white);
@@ -79,7 +85,7 @@ section{
 }
 .about-me{
     color:  white;
-    border: red solid  3px;
+    border: var(--main-red) solid  3px;
     margin: 0   30%;   
 }
 .about-me h2{
@@ -115,6 +121,10 @@ section{
 
 }
 
+
+
+
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -123,8 +133,47 @@ section{
     padding: 20px;
 }
 
+
 .project-block{
     background-color: var(--main-gray);
+}
+
+.card {
+    height: inherit;
+    width: inherit;
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.card .project-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card .img-hover-descriptor {
+    display: none;
+    position: absolute;
+    text-align: left;
+    padding:    10px 10px;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    opacity: 1;
+}
+
+.tech{
+    text-decoration: underline;
+}
+
+.card:hover .img-hover-descriptor {
+    display: block;
+}
+.card:hover .project-img {
+    opacity: 0;
 }
 
 .project-title{
@@ -134,41 +183,20 @@ section{
     padding-bottom: 10px;
     font-size: 1.5rem;
 }
-
-
-.project-img {
-    height: calc(100% - 3.4rem);
-    width: 100%;
-    object-fit: fill;
+.disclaimer{
+    font-weight: 200;
 }
+
+
+
+
 button{
-    height: 2.5rem;
-    width: 5rem;
+    height: 3rem;
+    width: 7rem;
+    font-size: 1.5rem;
     color:  white;
     background-color: var(--main-gray);
 }
-
-/*
-.card {
-    width: 130px;
-    height: 195px;
-    position: relative;
-    display: inline-block;
-}
-.card .img-top {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
-}
-.card:hover .img-top {
-    display: inline;
-}
-.card:hover .img-back {
-    display: none !important;
-}
-*/
 
 
 
