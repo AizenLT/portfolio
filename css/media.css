@@ -2,4 +2,11 @@
     .background-img{
         display:none;
     }
+    .welcome-text h1{
+        font-size: 3rem;
+    }
+    .welcome-text p{
+        font-size: 1.5rem;
+    }
+
 }
