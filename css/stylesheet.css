@@ -2,7 +2,6 @@
     --main-white: #ffffff;
     --main-red: #a12334;
     --main-gold: #e4c725;
-    --main-blue: #411e63b9;
     --main-gray: #313a44;
 
 }
@@ -79,7 +78,6 @@ section{
 
 }
 .background-img{
-    background-image: url("./img's/DonatasKaretaFlipped.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: inline-block;
@@ -267,18 +265,7 @@ footer{
 }
 
 
-@keyframes fade {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.25;
-    }
-  }
 
-@media only screen and (max-width: 660px) {
-    .background-img{
-        display:none;
-    }
-}
+
+
   
