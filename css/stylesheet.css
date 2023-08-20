@@ -75,8 +75,9 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     width: 100%;
-
+    
 }
+
 .background-img{
     background-size: cover;
     background-repeat: no-repeat;
@@ -100,7 +101,6 @@ section{
 .welcome-text p{
     color:  var(--main-red);
     padding-bottom: 5vh;
-    font-size:  2rem;
     
 }
 .about-me{
@@ -111,13 +111,11 @@ section{
 }
 .about-me h2{
     padding-top: 5px;
-    font-size: 2rem;
     text-decoration: underline;
 }
 
 .about-me   p{
-    color:  white;
-    font-size: 1.5rem;
+    color:  var(--main-white);
 }
 
 
@@ -137,7 +135,7 @@ section{
    padding-top: 50px;
    padding-bottom: 10px;
    font-size: 2rem;
-   color: white;
+   color: var(--main-white);
    text-decoration: underline;
 
 }
